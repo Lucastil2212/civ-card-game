@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Civ6-like Turn-Based Card Game</title>
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+    <header>
+        <h1>Civ6-like Turn-Based Card Game</h1>
+    </header>
+    <main>
+        <section id="game-board">
+            <div id="fields">
+                <div id="player-field">
+                    <!-- Player cards on the board will be added dynamically -->
+                </div>
+                <div id="opponent-field">
+                    <!-- Opponent cards on the board will be added dynamically -->
+                </div>
+            </div>
+            <div id="player-hand">
+                <h2>Player's Hand</h2>
+                <div class="cards-container">
+                    <!-- Player cards will be dynamically added here -->
+                </div>
+            </div>
+            <div id="opponent-hand">
+                <h2>Opponent's Hand</h2>
+                <div class="cards-container">
+                    <!-- Opponent cards will be dynamically added here -->
+                </div>
+            </div>
+            <div id="game-info">
+                <h2>Game Information</h2>
+                <p>Turn: <span id="turn-number">1</span></p>
+                <p>Player's Points: <span id="player-points">0</span></p>
+                <p>Opponent's Points: <span id="opponent-points">0</span></p>
+            </div>
+        </section>
+        <section id="actions">
+            <h2>Actions</h2>
+            <button id="draw-card" onclick="drawCard()">Draw Card</button>
+            <button id="play-card">Play Card</button>
+            <button id="end-turn">End Turn</button>
+        </section>
+        <section id="tech-tree">
+            <h2>Tech Tree</h2>
+            <div class="tech-level level-1">
+                <div class="tech" id="tech-1-1">Technology 1.1</div>
+                <div class="tech" id="tech-1-2">Technology 1.2</div>
+            </div>
+            <div class="tech-level level-2">
+                <div class="tech" id="tech-2-1">Technology 2.1</div>
+                <div class="tech" id="tech-2-2">Technology 2.2</div>
+            </div>
+            <div class="tech-level level-3">
+                <div class="tech" id="tech-3-1">Technology 3.1</div>
+                <div class="tech" id="tech-3-2">Technology 3.2</div>
+            </div>
+            <!-- Add more tech levels and technologies as needed -->
+        </section>
+    </main>
+    <script src="script.js"></script>
+    <footer>
+        <p>Created by [Your Name]</p>
+    </footer>
+</body>
+
+</html>
